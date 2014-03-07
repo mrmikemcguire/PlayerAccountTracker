@@ -22,6 +22,7 @@ public class Players
 		Players[] players = new Players[numberOfPlayers];
 
 		Scanner userInput2 = new Scanner(System.in);
+
 		
 		for (int i = 0;i < numberOfPlayers;i++)
 			{
@@ -32,15 +33,22 @@ public class Players
 			Players individual = new Players(playerName,initialAmount);
 			players[i] = individual;
 			
+			System.out.println("The player is " + players[i].playerName);
+			
 			System.out.println("The player named " + players[i].playerName + " has $" + players[i].initialAmount);
 			}
 		
+		System.out.println("Player #1 is named " + players[0].playerName);
+		System.out.println("Player #2 is named " + players[1].playerName);
+
 		System.out.println();
 		System.out.println("The " + numberOfPlayers + " players and their starting amounts are:");
 		System.out.println();
 		
-		for (int j = 0;j < numberOfPlayers;j++)
+		for (int j = 0;j <numberOfPlayers;j++)
 			{
+			System.out.println("Player # " + (j + 1) + " is named " + players[j].playerName);
+
 			System.out.println(players[j].playerName);
 			System.out.println(players[j].initialAmount);
 			}
