@@ -13,7 +13,7 @@ public class Players
 		Scanner userInput1 = new Scanner(System.in);
 		int numberOfPlayers = userInput1.nextInt();
 
-		Player[] players = new Player[numberOfPlayers];
+		Gamer[] players = new Gamer[numberOfPlayers];
 
 		Scanner userInput2 = new Scanner(System.in);
 
@@ -24,7 +24,7 @@ public class Players
 			playerName = userInput2.nextLine();
 			initialAmount = PlayerAccounts.initialAmount;
 			
-			Player individual = new Player(playerName,initialAmount);
+			Gamer individual = new Gamer(playerName,initialAmount);
 			players[i] = individual;
 			}
 

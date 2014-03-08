@@ -1,10 +1,10 @@
-public class Player
+public class Gamer
 
 	{
 	private String name;
 	private int currentAmount;
 	
-	public Player(String name, int currentAmount)
+	public Gamer(String name, int currentAmount)
 		{
 		this.name = name;
 		this.currentAmount = currentAmount;
